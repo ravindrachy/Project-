@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+}
+
+.navbar {
+    height: 80px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 110px;
+    padding: 10px;
+}
+
+.logo {
+    background-image: url("image/amazon_logo.png");
+    background-size: cover;
+    height: 40px;
+    weidth: 100px;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+/** box2 **/
+.address-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 3px;
+}
+
+.address-second {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/** Box3 **/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+
+}
+
+.nav-search:hover {
+    border: 2px solid orange;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #fedb68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+/** Box4 **/
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/** Box6 **/
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/** Panel **/
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -250px;
+
+    .panel-all {
+        padding: 10px;
+    }
+
+}
+
+.panel-ops {
+    margin-left: -300px;
+}
+
+.panel-ops p {
+    display: inline;
+    font-size: 0.99rem;
+    margin-left: 10px;
+    padding: 10px;
+
+}
+
+.panel-deals {
+    font-size: 9.2rem;
+    font-weight: 700;
+    padding: 60px;
+}
+
+/** hero section **/
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 1190px;
+    box-sizing: border-box;
+}
+.slide img {
+    width: 1520px;
+    height:100%;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 560px;
+}
+.image-box{
+    display: flex;
+    position: absolute;
+    animation: carousel 15s alternate infinite;
+
+}
+@keyframes carousel {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    24%{
+        left: -1520px;
+    }
+    42%{
+        left: -1520px;
+    }
+    46%{
+        left: calc(-1520*2px);
+    }
+    62%{
+        left: calc(-1520*3px);
+    }
+    66%{
+        left: calc(-1520*3px);
+    }
+    82%{
+        left: calc(-1520*3px);
+    }
+    86%{
+        left: calc(-1520*4px);
+    }
+    100%{
+        left: calc(-1520*4);
+    }
+
+}
+
+    
+
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom:250px;
+    position:relative;
+
+}
+
+.hero-msg a {
+    color: #007185;
+}
+
+/** Shop Section **/
+/**
+.shop-section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+
+
+}
+
+.box {
+    border: 2px solid black;
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin: 15px;
+
+}
+
+.box-img {
+    overflow: hidden;
+
+}
+
+.box-img1 {
+    background-image: url(image/box-img1.jpg);
+    background-image: url(image/box-img2.jpg);
+    height: 110px;
+    width: 200px;
+    display: flex;
+
+}
+
+
+
+
+.box-img3 {
+    background-image: url(image/box-img3.jpg);
+    background-image: url(image/box-img4.jpg);
+    height: 110px;
+    width: 200px;
+    display: flex;
+}
+
+.box-content {
+    margin-left: 10px;
+    margin-right: 1rem;
+}
